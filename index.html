@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mimiのポートフォリオ。動画編集・3DCG・Web制作など、未経験から学び制作した作品を紹介しています。">
+
+<!-- OPG設定 : SNSでの見え方 -->
+<meta property="og : title" content="Mimi's Portfolio">
+<meta property="og : description" content="動画編集・3DCG・Web制作など、mimiの制作実績を紹介しています。">
+<meta property="og : image" content="https://example.com/images/ogp-thumbnail.jpg">
+<meta property="og : url" content="https://example.com/">
+<meta property="og : type" content="website">
+<meta property="og : site_name" content="Mimi Portfolio">
+
+<!-- Twitter(X)カード設定 -->
+ <meta name="twitter : card" content="summary_large_image">
+ <meta name="twitter : title" content="Mimi's Portfolio">
+ <meta name="twitter : description" content="動画編集・3DCG・Web制作など、mimiの制作実績を紹介しています。">
+ <meta name="twitter : image" content="https://example.com/images/ogp-thumbnail.jpg">
+
+  <title>Mimi's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== ヘッダー（ロゴ＋ナビ） ===== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="#hero">Mimi<span class="accent">Portfolio</span></a></h1>
+
+      <!-- ハンバーガーアイコン -->
+      <button id="hamburger" class="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- ナビゲーション -->
+      <nav id="main-nav" class="main-nav">
+        <a href="#intro">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#videos">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero" id="hero">
+
+    <!-- 追加・シャボン玉のレイヤ -->
+<div class="bubbles-bg" aria-hidden="true"></div>
+ 
+    <div class="hero-content">
+      <h2 class="catch"><span class="light">I'm</span> <span class="highlight">mimi</span></h2>
+      <p class="tagline">動画編集 × 3DCG × Web制作で想いをカタチにするクリエイター</p>
+      <div class="hero-buttons">
+        <a href="#videos" class="btn">作品を見る</a>
+        <a href="#contact" class="btn outline">お問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ===== Intro ===== -->
+    <section id="intro" class="fade-in">
+      <h2>こんにちは</h2>
+      <p>
+        ご覧いただきありがとうございます。<br>
+        このポートフォリオは2025年6月中旬頃にPCを購入したのをきっかけに、未経験から動画やWeb制作に挑戦した記録です。<br>
+        実践しながら勉強・模索を重ね、サイトや各短編動画を含めて約2週間で制作しました。<br><br>
+        下記にあるイラストは全て過去に友達の為につくった作品です。(使用ツール：ibisPaint）<br>
+        絵は得意ではないのですが、下絵や参考画像、写真等があれば少しずつ形にすることができます。友達にも「こんな風にしてほしい」など希望のイメージ画像をもらって、話し合いながらできる範囲で近づけるよう描きました。<br><br>
+        未経験分野から動画編集やWeb制作の勉強を始め、少しずつ自分で形にしてきた作品をまとめています。<br>
+        製作中はわからない事も多く、ネットやChatGPTなどのAIツールも参考にしつつ自分なりに試行錯誤を重ねました。<br><br>
+        まだまだ学びの途中ですが、「こんなツールが使える、こんな雰囲気の動画作れる」など感じてもらえたら嬉しいです。<br>
+        どうぞごゆっくりご覧ください。
+      </p>
+    </section>
+
+    <a href="tools.html" class="btn-link">🔨制作ツール・工程を見る</a>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="skills fade-in">
+      <h2>できること</h2>
+      <ul class="skill-list">
+        <li>🎬&nbsp;動画編集（Premiere Pro / After Effects）</li>
+        <li>🖼️&nbsp;画像編集（Illustrator / ibisPaint / Photoshop）</li>
+        <li>💻&nbsp;Web制作（HTML / CSS / JavaScript / Figma）</li>
+        <li>🖥️&nbsp;3DCG（Blender / VRoid）</li>
+        <li>🎤&nbsp;ナレーション制作（VOICEVOX / COEIROINK）</li>
+      </ul>
+    </section>
+
+    <!-- ===== Style (作風) ===== -->
+    <section class="style fade-in">
+      <h2>作風・テイスト</h2>
+      <p>まだ模索中ですが、柔らかく親しみやすい雰囲気を意識しながら全体のバランスや伝わりやすさを大切にしています。</p>
+    </section>
+
+    <!-- ===== Works ===== -->
+    <section id="videos" class="fade-in">
+      <h2>🎬 動画一覧</h2>
+      <div class="card-container">
+
+        <div class="card" data-badge="おすすめ">
+          <h3>ダイジェスト動画</h3>
+          <div class="video-wrapper"></div>
+          <div class="aspect-ratio">
+          <iframe src="https://youtube.com/embed/qyXoHc_-59M" title="ダイジェスト" allowfullscreen></iframe></div>
+          <p>ポートフォリオ作品（5本）をぎゅっと約1分半にまとめた紹介動画です。初めての方やざっくり知りたい方はこちらからどうぞ。</p>
+        </div>
+
+       <div class="card" data-badge="アプリ紹介">
+          <h3>LunaBell 紹介動画</h3>
+          <div class="video-wrapper"></div>
+          <div class="aspect-ratio">
+          <iframe src="https://youtube.com/embed/Btsmylr9dKg" title="LunaBell" allowfullscreen></iframe></div>
+          <p>架空美肌・メイク加工アプリ「LunaBell」機能を実際の画面のように表示し、AEやFigumaを使用したスライダー演出付きの紹介動画です。</p>
+        </div>
+
+        <div class="card" data-badge="Vlog">
+          <h3>Daily Vlog風動画</h3>
+          <div class="video-wrapper"></div>
+          <div class="aspect-ratio">
+          <iframe src="https://youtube.com/embed/N4yu1AbHn9A" title="Vlog" allowfullscreen></iframe></div>
+          <p>1日の生活をゆるく切り取ったVlog風ムービー。BGMやナレーションにもこだわりました。</p>
+        </div>
+
+        <div class="card" data-badge="プロモ">
+          <h3>LeafFlow 紹介動画</h3>
+          <div class="video-wrapper"></div>
+          <div class="aspect-ratio">
+          <iframe src="https://youtube.com/embed/UmFVQY22ZAE" title="LeafFlow" allowfullscreen></iframe></div>
+          <p>架空企業サービス「LeafFlow」を紹介するプロモーション動画を企画・制作しました。Figumaを使用し、Line風のやり取りの様子を表現しました。</p>
+        </div>
+
+        <div class="card" data-badge="メイキング">
+          <h3>制作の裏側</h3>
+          <div class="video-wrapper"></div>
+          <div class="aspect-ratio">
+          <iframe src="https://youtube.com/embed/b8vmvseopTM" title="Behind" allowfullscreen></iframe></div>
+          <p>ポートフォリオ制作のワークや使ったツールをわかりやすくまとめて紹介します。</p>
+        </div>
+
+        <div class="card" data-badge="再生リスト">
+          <h3>まとめて視聴：再生リスト</h3>
+          <div class="video-wrapper"></div>
+          <div class="aspect-ratio">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLZF0jO9y5qVK7wershKbs910tO3DG9JsB" title="Playlist" allowfullscreen></iframe></div>
+          <p>全5本を順番にまとめた再生リストです。全ての動画を見続けてみたい方向けに、再生リストもご用意しています。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="illustration">
+      <h2>✍イラスト作品</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="images/eyes_3characters.jpeg" alt="目元描き分け練習" class="modal-image"data-caption="目元のイラストです" data-index="0">
+          <div class="card-body">
+            <h3 class="-tittle">目元描き分け</h3>
+            <p class="text">複数のキャラクターの雰囲気やハイライトを参考にしながら、友達の希望するイメージの合うよう描き方を工夫しました。特に決まった描き方もない為、希望に寄り添えるよう意識して描いてます。</p>
+          </div>
+        </div>
+         <div class="card">
+          <img src="images/chibi_characters.jpeg" alt="ミニキャラ作品" class="modal-image" data-caption="ミニキャラ作品です" data-index="1">
+          <div class="card-body">
+            <h3 class="-tittle">ミニキャライラスト</h3>
+          <p class="text">上のキャラは動画内にいる3DCGキャラの原本で過去に猫のアイコンフレーム枠に合わせて描いたオリキャラです。下のキャラはlineスタンプ等にも使える猫x投資家。典型的なイメージ（眼鏡やPCなど）は避けたいという公募を見て描きました。（練習用に書いただけなので応募はしていません）</p>
+        </div>
+        </div>
+        <div class="card">
+          <img src="images/portrait.jpeg" alt="簡易な似顔絵" class="modal-image" data-caption="簡易な似顔絵です" data-index="2">
+          <div class="card-body">
+             <h3 class="-tittle">簡単な似顔絵イラスト</h3>
+             <p>上２点は友達のアイコン用に描いたミニキャラ。下のイラストは友達の結婚祝いとして実際の写真をもとに制作しました。(簡単な描き方ですが顔は身バレ防止として伏せさせてもらってます。雰囲気だけ伝われば幸いです)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="fade-in">
+      <h2>📨 お問い合わせ</h2>
+      <p>お仕事のご依頼は <a href="mailto:mimi.messageroom@gmail.com">こちらのメール</a> までお気軽にどうぞ。</p>
+      <p class="profile-snippet">
+        現在各ツールの勉強をしながら動画編集・3DCG・Webデザインなど多方面に活動中。<br>
+        現在準備中ですがSNSでも制作過程を発信しようと思います。 → <a href="https://twitter.com/" target="_blank" rel="noopener">準備中</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>&copy; 2025 Mimi's Portfolio</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

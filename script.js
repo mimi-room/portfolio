@@ -154,3 +154,5 @@ document.addEventListener('DOMContentLoaded', () => {
     caption.textContent = '';
   });
 });
+
+document.body.appendChild(modal);

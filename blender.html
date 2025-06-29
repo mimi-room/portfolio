@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Blender作品一覧</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 共通ヘッダー（戻るボタン） -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">← Portfolioに戻る</a></h1>
+    </div>
+
+    <h1 class="section-tittle">🖼️Blender作品</h1>
+    <p class="section-description">
+      ここではBlenderの練習成果として作品を随時掲載する予定です。
+    </p>
+  </header>
+
+  <main class="card-container">
+    <section class="card">
+      <img src="images/donut.jpg"
+           alt="ドーナツ作品"
+           class="modal-image"
+           data-caption="ドーナツ作品です">
+      <h2>ドーナツ</h2>
+      <p>初めて作った3D作品。マテリアルやライティングも練習しました。</p>
+    </section>
+
+    <section class="card">
+      <img src="images/mug.jpeg"
+           alt="マグカップ作品"
+           class="modal-image"
+           data-caption="マグカップ作品です">
+      <h2>マグカップ</h2>
+      <p>少し複雑な形の練習。厚みや曲面がポイント。</p>
+    </section>
+
+    <section class="card">
+      <img src="images/kuma.jpg"
+           alt="クマ作品"
+           class="modal-image"
+           data-caption="クマ作品です">
+      <h2>クマ</h2>
+      <p>初めての人体モデル作品。モデリング・シェーディング・レンダリングまでの一連を練習。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mimi's Portfolio</p>
+  </footer>
+
+  <!-- JSファイルを読み込み（modal処理用） -->
+  <script src="script.js"></script>
+
+</body>
+</html>
